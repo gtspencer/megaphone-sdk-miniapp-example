@@ -1,4 +1,4 @@
-import { MegaphoneProvider, TimelinePanel } from "0xmegaphone-sdk/react";
+import { MegaphoneProvider, TimelinePanel, Logo } from "0xmegaphone-sdk/react";
 import { Context, sdk } from "@farcaster/miniapp-sdk";
 import { useEffect, useState } from "react";
 import { useAccount } from "wagmi";
@@ -20,6 +20,7 @@ function App() {
   return (
     <>
       <div>Megaphone SDK Example</div>
+      <Logo />
       {context && (
         <MegaphoneProvider apiKey="YOUR_API_KEY" operatorFid={1768n} isTestnet={true}>
           <TimelinePanel

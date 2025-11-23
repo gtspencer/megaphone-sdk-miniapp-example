@@ -25,7 +25,6 @@ function App() {
           account={address ?? "0x0000000000000000000000000000000000000000"}
           fid={BigInt(context.user.fid)}
           name={context.user.username ?? ""}
-          isTestnet={true}
         />
       )}
     </>

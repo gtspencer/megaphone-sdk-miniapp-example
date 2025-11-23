@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <MegaphoneProvider apiKey="YOUR_API_KEY" operatorFid={1768n}>
+        <MegaphoneProvider apiKey="YOUR_API_KEY" operatorFid={1768n} isTestnet={true}>
           <App />
         </MegaphoneProvider>
       </QueryClientProvider>

@@ -13,7 +13,7 @@
     "@farcaster/miniapp-sdk": "latest",
     "@farcaster/miniapp-wagmi-connector": "latest",
     "@tanstack/react-query": "5.45.1",
-    "0xmegaphone-sdk": "^1.0.11",
+    "0xmegaphone-sdk": "^1.0.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "viem": "latest",

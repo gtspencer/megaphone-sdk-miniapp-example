@@ -1,12 +1,11 @@
 import { farcasterMiniApp } from "@farcaster/miniapp-wagmi-connector";
 import { http, createConfig } from "wagmi";
-import { base, baseSepolia } from "wagmi/chains";
+import { baseSepolia } from "wagmi/chains";
 
 export const config = createConfig({
-  chains: [base, baseSepolia],
+  chains: [baseSepolia],
   connectors: [farcasterMiniApp()],
   transports: {
-    [base.id]: http(),
     [baseSepolia.id]: http(),
   },
 });
